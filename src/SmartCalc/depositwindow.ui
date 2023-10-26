@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DepositWindow</class>
+ <widget class="QDialog" name="DepositWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>499</width>
+    <height>504</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(239, 224, 255);
+border-radius: 20px;</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>281</y>
+     <width>451</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(114, 84, 179);
+border-radius: 7px;</string>
+   </property>
+   <property name="text">
+    <string>Рассчитать</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="amount_deposit_end_2">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>448</y>
+     <width>221</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(190, 164, 245);
+border-radius: 7px;</string>
+   </property>
+   <property name="text">
+    <string>   0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tax_amount">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>408</y>
+     <width>221</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(153, 127, 209);
+border-radius: 7px;</string>
+   </property>
+   <property name="text">
+    <string>   сумма налога</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="amount_deposit_end">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>448</y>
+     <width>221</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(153, 127, 209);
+border-radius: 7px;</string>
+   </property>
+   <property name="text">
+    <string>   сумма на вкладе к концу срока</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tax_amount_2">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>408</y>
+     <width>221</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(190, 164, 245);
+border-radius: 7px;</string>
+   </property>
+   <property name="text">
+    <string>   0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="percent_charges">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>370</y>
+     <width>221</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(153, 127, 209);
+border-radius: 7px;</string>
+   </property>
+   <property name="text">
+    <string>   начисленные проценты</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="percent_charges_2">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>370</y>
+     <width>221</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(190, 164, 245);
+border-radius: 7px;</string>
+   </property>
+   <property name="text">
+    <string>   0</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="percent_capitalization">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>240</y>
+     <width>451</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(153, 127, 209);
+border-radius: 7px;</string>
+   </property>
+   <property name="text">
+    <string>  капитализация процентов</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="deposit_sum">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>35</y>
+     <width>221</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(153, 127, 209);
+border-radius: 7px;</string>
+   </property>
+   <property name="text">
+    <string>   сумма вклада</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="deposit_sum_2">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>35</y>
+     <width>221</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(190, 164, 245);
+border-radius: 7px;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="placement_period">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>69</y>
+     <width>221</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(153, 127, 209);
+border-radius: 7px;</string>
+   </property>
+   <property name="text">
+    <string>   срок размещения              </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="placement_period_2">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>70</y>
+     <width>221</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(190, 164, 245);
+border-radius: 7px;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="percent_rate">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>136</y>
+     <width>221</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(153, 127, 209);
+border-radius: 7px;</string>
+   </property>
+   <property name="text">
+    <string>   процентная ставка</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="percent_rate_2">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>136</y>
+     <width>221</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(190, 164, 245);
+border-radius: 7px;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tax_rate">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>165</y>
+     <width>221</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(153, 127, 209);
+border-radius: 7px;</string>
+   </property>
+   <property name="text">
+    <string>   налоговая ставка</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tax_rate_2">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>165</y>
+     <width>221</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(190, 164, 245);
+border-radius: 7px;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="frequency_payments">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>199</y>
+     <width>221</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(153, 127, 209);
+border-radius: 7px;</string>
+   </property>
+   <property name="text">
+    <string>   периодичность выплат, 1 раз в</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>100</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QRadioButton" name="year">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(153, 127, 209);
+border-radius: 7px;</string>
+      </property>
+      <property name="text">
+       <string>год</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QRadioButton" name="mounth">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(153, 127, 209);
+border-radius: 7px;</string>
+      </property>
+      <property name="text">
+       <string>месяц</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QRadioButton" name="days">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(153, 127, 209);
+border-radius: 7px;</string>
+      </property>
+      <property name="text">
+       <string>день</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>200</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QRadioButton" name="in_year">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(153, 127, 209);
+border-radius: 7px;</string>
+      </property>
+      <property name="text">
+       <string>год</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QRadioButton" name="in_mounth">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(153, 127, 209);
+border-radius: 7px;</string>
+      </property>
+      <property name="text">
+       <string>месяц</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QRadioButton" name="in_weeks">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(153, 127, 209);
+border-radius: 7px;</string>
+      </property>
+      <property name="text">
+       <string>неделю</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
