@@ -97,9 +97,9 @@ void MainWindow::trig_digits() {
       is_first_zero = true;
     } else {
       if (is_first_zero && is_dot)
-          ui->label_calc->setText(ui->label_calc->text().append(button->text()));
+        ui->label_calc->setText(ui->label_calc->text().append(button->text()));
       if (!is_first_zero)
-          ui->label_calc->setText(ui->label_calc->text().append(button->text()));
+        ui->label_calc->setText(ui->label_calc->text().append(button->text()));
     }
   }
 }
