@@ -19,7 +19,6 @@ SOURCES += \
     mainwindow.cpp \
     qcustomplot.cpp \
 
-
 HEADERS += \
     ../Model/model.h \
     creditwindow.h \

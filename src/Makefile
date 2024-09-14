@@ -55,7 +55,6 @@ main: clean
 	gcc $(FLAG) -g -o main $(FILES)
 	./main
 
-
 gcov_report: clean
 	@gcc $(FLAG) $(GCO) $(TEST) $(FILES) -o test $(GFLAGS)
 	./test
